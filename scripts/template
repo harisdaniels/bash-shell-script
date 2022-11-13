@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo -e "Please provide file name you want to create: \c"
+read -r file
+touch $file.sh
+echo '#!/bin/bash' > $file.sh
+echo '#Purpose: ' >> $file.sh
+echo '#Version: ' >> $file.sh
+echo '#Created Date: ' `date` >> $file.sh
+sleep 1
+echo '#Modified Date: ' `date`  >> $file.sh
+echo '#Author: Haris' >> $file.sh
+echo '#Source of learning: https://www.youtube.com/watch?v=uI-xHPk4tO0' >> $file.sh
+echo '# START #' >> $file.sh
+echo '# END #' >> $file.sh
