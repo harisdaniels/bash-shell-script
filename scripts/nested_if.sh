@@ -29,6 +29,10 @@ echo "Your average score is: $AVG"
         echo "You got second class"
         fi
 else
+	TOTAL=`expr $A + $B + $C`
+	AVG=`expr $TOTAL / 3`
+	echo "Your total score is: $TOTAL"
+	echo "Your average score is: $AVG"
         echo "Sorry, you failed"
 fi
 
